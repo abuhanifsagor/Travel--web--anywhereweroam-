@@ -15,37 +15,10 @@
     
 
 
-<!--=================== wide navbar =================-->
 
 
-<nav id="navbar" class="navbar navbar-expand-lg bg-dark d-none d-md-block">
-    <div class="container-fluid container">
-      <a class="navbar-brand" href="#">
-        <img src="images/logos/awr-logo-white.webp" alt="" width="30" height="24">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse " id="navbarNav">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item">
-            <a class="nav-link " aria-current="page" href="#">ABOUT US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#destinations">DESTINATIONS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#experience">EXPERIENCE</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#blog">BLOG</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-<!--=================== SMALL navbar =================-->
-    <nav id="navs" class="navbar navbar-dark  bg-dark fixed-top  d-sm-block d-md-none">
+<!--===================  navbar =================-->
+    <nav id="navs" class="navbar navbar-dark navbar-expand-lg   bg-dark fixed-top    ">
         <div class="container-fluid container">
           <a class="navbar-brand" href="#">
             <img src="images/logos/awr-logo-white.webp" alt="" >          
@@ -106,7 +79,7 @@
 <section id="about">
     <div class="container">
         <div class="row align-items-center g-4 justify-content-between">
-            <div class="col-12 about_content col-md-6">
+            <div class="col-12 col-lg-6 about_content col-md-10 mx-auto order-sm-1 order-1 order-md-0 order-lg-0 ">
                 <h1>Anywhere We Roam is here to help you make the most of <b>every trip</b>.</h1>
                 <p>We are Paul and Mark, two independent travellers passionate about exploring the world.</p>
                 <p>
@@ -118,7 +91,7 @@
                 <p>Read more about us and this blog on our <a href="">About Page</a>.</p>
                 <p>Paul & Mark</p>
             </div>
-            <div class="col-12 col-md-5  ">
+            <div class="col-12 col-lg-6 order-md-0 col-md-12 order-sm-0 order-0 order-lg-1  ">
                 <img src="images/blogs/paul-mark-1.jpg" alt="" class="img-fluid rounded-3">
             </div>
         </div>
@@ -233,15 +206,12 @@
 
 
     <script>
-        const navbar = document.getElementById('navbar');
         const navs = document.getElementById('navs');
 
         window.addEventListener('scroll', () => {
             if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
                 navs.classList.add('scrolled');
             } else {
-                navbar.classList.remove('scrolled');
                 navs.classList.remove('scrolled');
             }
         });

@@ -226,19 +226,17 @@ hr{
     border: none;
     overflow: hidden;
     padding: 5px;
-    border-radius: 5px;
     width: 300px !important;
-    
-    
-    &:hover img{
-
-        transform: scale(0.97);
-
-    } d
+    transition: 0.3s ease;
+    cursor: pointer;
     img{
+        transition: 0.3s ease;
         border-radius: 5px;
-        transition: .3s ease;
-       
+    }
+    &:hover{
+        img{
+            transform: scale(0.98);
+        }
     }
 }
 .card-text{
