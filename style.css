@@ -227,6 +227,7 @@ hr{
     overflow: hidden;
     padding: 5px;
     border-radius: 5px;
+    width: 280px !important;
     
     
     &:hover img{
